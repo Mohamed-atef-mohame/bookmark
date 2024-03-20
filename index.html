@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOokMARker
+        
+    </title>
+     
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="w-75 mx-auto bg-light rounded p-3">
+   <h1 class="text-center py-3 bookmark">Bookmarker</h1>
+   <hr>
+   
+   <h2 class="text-center"><i class="fa-solid fa-bookmark"></i>            Bookmark your favorite sites
+<i class="fa-solid fa-bookmark"></i></h2>
+   <div>
+    <label for="Name"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+   <input oninput="validationName()" class="form-control " type="text" id="Name" placeholder="Book Market Name">
+   <div id="nameMassage" class="alert alert-danger d-none">write your web site.......</div>
+   </div>
+
+   <div class="my-3">
+    <label for="Url"><i class="fa-solid fa-link"></i>Site URL</label>
+   <input oninput="validationUrl()" class="form-control" type="text" id="Url" placeholder="Website Url">
+      <div id="UrlMassage" class="alert alert-danger d-none ">write your web site url.......</div>
+   </div>
+   
+
+   <div class="text-center">   <button onclick=" adding()" class="btn btn-dark mt-3 w-25 " >Submit</button>
+</div>
+   <table class="table my-3 text-center">
+    <!-- <a href=""></a> -->
+    <thead>
+        <tr>
+            <th>Index	</th>
+            <th class="">Website Name	</th>
+            <th>visit</th>
+            <th>Delete</th>
+            
+        </tr>
+    </thead>
+    <tbody id="Table">
+        
+    </tbody>
+   </table>
+
+   
+</div>
+
+
+
+    
+    
+
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
